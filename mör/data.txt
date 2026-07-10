@@ -1,0 +1,1 @@
+This value in a non-ASCII directory is public.

@@ -1,0 +1,3 @@
+[submodule "vendor/sub"]
+	path = vendor/sub
+	url = https://vcs.example.com/vendor/sub.git

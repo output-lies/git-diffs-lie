@@ -1,0 +1,23 @@
+# branch	class	assert	arg	summary
+content/bidi-trojan-source	content	neutralized	e280ae	bidi override reorders the visible line
+content/homoglyph-identifier	content	neutralized	d0b0	Cyrillic a masquerades as Latin a
+content/zero-width	content	neutralized	e2808b	zero-width space splits a token
+content/unicode-whitespace	content	neutralized	c2a0	no-break space for an ASCII space
+content/invalid-utf8	content	failclosed	-	undecodable UTF-8 byte
+content/overlong-line	content	shows	char line	single 6000-character line
+content/nul-byte	content	shows	NUL byte	embedded NUL, treated binary
+content/ansi-escape	content	neutralized	1b5b324b	non-SGR escape rewrites the line
+content/lone-cr	content	neutralized	0d	lone CR overwrites the line
+path/bidi-filename	path	shows	suspicious	bidi override inside a filename
+path/tab-in-filename	path	shows	forge diff-output	tab inside a filename
+path/newline-in-filename	path	shows	forge diff-output	newline inside a filename
+path/gitattributes-hide-diff	path	failclosed	-	.gitattributes hides a real change
+path/gitattributes-nonascii-dir	path	failclosed	-	.gitattributes in a non-ASCII dir
+type/mode-exec	type	shows	mode	executable bit set, no content change
+type/file-to-symlink	type	shows	symlink	file becomes a symlink
+type/symlink-retarget	type	shows	DEMO-CREDENTIALS	symlink retargeted
+type/dangling-symlink	type	shows	DEMO-MISSING	dangling symlink
+type/submodule-bump	type	shows	Submodule	gitlink pointer bumped
+type/gitlink-mimic	type	shows	mimics	file mimics a gitlink line
+release‮gpj	refname	refname	e280ae	bidi override in the branch name
+mаster	refname	refname	d0b0	homoglyph branch name spoofing master

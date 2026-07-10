@@ -1,0 +1,1 @@
+A regular file that a branch turns into a symlink.
