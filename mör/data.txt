@@ -1,1 +1,1 @@
-This value in a non-ASCII directory is public.
+This value in a non-ASCII directory is now SENSITIVE and changed.
