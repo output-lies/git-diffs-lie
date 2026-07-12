@@ -83,7 +83,7 @@ pager hides or misrenders, but the safe git review tools (`git-meld`,
 `git-diff-review`, `git-review-difftool`, `git-review-mergetool`) surface.
 
 **Live, illustrated walk-through (what you see vs what's really happening):**
-<https://org-ai-assisted.github.io/git-diffs-lie/>
+<https://output-lies.github.io/git-diffs-lie/>
 
 > Scope note: this repo is the corpus of adversarial diffs the review tools are
 > meant to **defend against**. It is not a list of vulnerabilities *in* those
@@ -348,7 +348,7 @@ EOF
 ## ---------------------------------------------------------------------------
 ## Fresh repository + clean master.
 ## ---------------------------------------------------------------------------
-rm --recursive --force -- "${target}"
+safe-rm --recursive --force -- "${target}"
 mkdir --parents -- "${target}"
 cd -- "${target}"
 git init --quiet --initial-branch=master
@@ -553,7 +553,7 @@ finish_case 'type: executable bit set, no content change' src/build.sh
 
 ## type/file-to-symlink -- a regular file becomes a symlink.
 new_case type/file-to-symlink
-rm --force -- swap.txt
+safe-rm --force -- swap.txt
 ln --symbolic -- /nonexistent/DEMO-TARGET swap.txt
 finish_case 'type: regular file replaced by a symlink'
 

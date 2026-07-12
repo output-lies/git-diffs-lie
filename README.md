@@ -6,7 +6,7 @@ pager hides or misrenders, but the safe git review tools (`git-meld`,
 `git-diff-review`, `git-review-difftool`, `git-review-mergetool`) surface.
 
 **Live, illustrated walk-through (what you see vs what's really happening):**
-<https://org-ai-assisted.github.io/git-diffs-lie/>
+<https://output-lies.github.io/git-diffs-lie/>
 
 > Scope note: this repo is the corpus of adversarial diffs the review tools are
 > meant to **defend against**. It is not a list of vulnerabilities *in* those
